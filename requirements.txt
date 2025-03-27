@@ -1,8 +1,8 @@
-numpy==2.2.4
-pandas==2.2.3
-plotly==6.0.1
-streamlit==1.44.0
-transformers==4.50.1
-pip==25.0.1
-torch==2.6.0
-tensorflow==2.18.0
+numpy
+pandas
+plotly
+streamlit
+transformers
+pip
+torch
+tensorflow
