@@ -3,9 +3,8 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 from transformers import pipeline
-import tensorflow as tf  # Import TensorFlow
 
-# Initialize the Hugging Face chatbot model
+# Initialize the Hugging Face chatbot model (with PyTorch as the framework)
 chatbot = pipeline("text-generation", model="microsoft/DialoGPT-medium", framework="pt")
 
 # Custom CSS for enhanced styling
@@ -134,10 +133,6 @@ st.plotly_chart(fig4)
 
 # AI and ML Insights Section
 st.subheader("🧠 AI-Powered Ecosystem Insights")
-
-# Placeholder for TensorFlow model usage
-# You can define and train a TensorFlow model here if needed
-# For example, you could create a simple neural network for predictions based on the simulation data
 
 # Generate summary insights
 st.write("#### Key Highlights")
