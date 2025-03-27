@@ -5,7 +5,7 @@ import streamlit as st
 from transformers import pipeline
 
 # Initialize the Hugging Face chatbot model
-chatbot = pipeline("text-generation", model="microsoft/DialoGPT-medium")
+chatbot = pipeline("text-generation", model="microsoft/DialoGPT-medium", framework="pt")
 
 # Custom CSS for enhanced styling
 st.markdown("""
